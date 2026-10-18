@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SwiftBlock</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <img src="../icons/icon48.png" alt="" width="28" height="28" />
+        <div>
+          <h1>SwiftBlock</h1>
+          <p class="tagline">Hide Taylor Swift mentions</p>
+        </div>
+      </div>
+      <label class="toggle" title="Enable or disable filtering">
+        <input type="checkbox" id="enabled" checked />
+        <span class="toggle-ui" aria-hidden="true"></span>
+        <span class="toggle-label" id="enabled-label">On</span>
+      </label>
+    </header>
+
+    <section class="panel" aria-labelledby="keywords-heading">
+      <div class="panel-head">
+        <h2 id="keywords-heading">Keywords</h2>
+        <button type="button" id="reset-defaults" class="linkish">Reset defaults</button>
+      </div>
+      <form id="add-form" class="add-row">
+        <input
+          id="new-keyword"
+          type="text"
+          maxlength="80"
+          placeholder="Add keyword or alias"
+          autocomplete="off"
+          aria-label="New keyword"
+        />
+        <button type="submit" id="add-btn">Add</button>
+      </form>
+      <p id="status" class="status" role="status" hidden></p>
+      <ul id="keyword-list" class="keyword-list"></ul>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Inspired by
+        <a href="https://github.com/JamesShamsi/KardBlock" target="_blank" rel="noopener noreferrer"
+          >KardBlock</a
+        >
+        (James Shamsi, 2015).
+      </p>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+:root {
+  --ink: #14212b;
+  --muted: #5b6b76;
+  --paper: #f3efe6;
+  --panel: #fffdf8;
+  --line: #d7cfc0;
+  --accent: #0f4c5c;
+  --accent-soft: #d7e6ea;
+  --danger: #b42318;
+  --danger-soft: #f8e4e1;
+  --radius: 10px;
+  --font: "Segoe UI", "Avenir Next", "Trebuchet MS", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 340px;
+  max-height: 520px;
+  overflow: auto;
+  color: var(--ink);
+  background:
+    radial-gradient(120% 80% at 0% 0%, #e7f0f2 0%, transparent 55%),
+    radial-gradient(90% 70% at 100% 0%, #f6e9df 0%, transparent 50%),
+    var(--paper);
+  font: 13px/1.45 var(--font);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 14px 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.brand img {
+  border-radius: 8px;
+  flex: 0 0 auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.tagline {
+  margin: 1px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toggle-ui {
+  width: 38px;
+  height: 22px;
+  border-radius: 999px;
+  background: #c9c2b4;
+  position: relative;
+  transition: background 0.15s ease;
+}
+
+.toggle-ui::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s ease;
+}
+
+.toggle input:checked + .toggle-ui {
+  background: var(--accent);
+}
+
+.toggle input:checked + .toggle-ui::after {
+  transform: translateX(16px);
+}
+
+.toggle input:focus-visible + .toggle-ui {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.toggle-label {
+  font-weight: 600;
+  min-width: 1.6em;
+}
+
+.panel {
+  padding: 12px 14px 8px;
+}
+
+.panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.linkish {
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.linkish:hover {
+  text-decoration: underline;
+}
+
+.add-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.add-row input {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+}
+
+.add-row input:focus {
+  outline: 2px solid var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.add-row button {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: var(--accent);
+  color: #f7fbfc;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-row button:hover {
+  filter: brightness(1.08);
+}
+
+.status {
+  margin: 0 0 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.keyword-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 300px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.keyword-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.keyword-list li:last-child {
+  border-bottom: 0;
+}
+
+.keyword-list .label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.keyword-list .remove {
+  border: 0;
+  border-radius: 6px;
+  padding: 4px 8px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.keyword-list .remove:hover {
+  filter: brightness(0.97);
+}
+
+.empty {
+  padding: 16px 12px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.footer {
+  padding: 8px 14px 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: var(--accent);
+}

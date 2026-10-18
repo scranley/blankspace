@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SwiftBlock demo feed</title>
+    <style>
+      :root {
+        --ink: #1a242c;
+        --muted: #5c6b75;
+        --paper: #f4f1ea;
+        --card: #fffdf8;
+        --line: #d9d1c3;
+        --accent: #0f4c5c;
+        --font: "Segoe UI", "Avenir Next", "Trebuchet MS", sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(90% 60% at 10% 0%, #e4eef1 0%, transparent 55%),
+          var(--paper);
+        font: 15px/1.5 var(--font);
+      }
+      main {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 28px 18px 48px;
+      }
+      h1 {
+        margin: 0 0 6px;
+        font-size: 1.6rem;
+      }
+      .lede {
+        margin: 0 0 22px;
+        color: var(--muted);
+      }
+      .feed {
+        display: grid;
+        gap: 12px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      article,
+      .feed > li {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 16px;
+      }
+      article h2,
+      .feed > li h2 {
+        margin: 0 0 6px;
+        font-size: 1.05rem;
+      }
+      article p,
+      .feed > li p {
+        margin: 0;
+        color: var(--muted);
+      }
+      .tag {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+      .hint {
+        margin-top: 22px;
+        padding: 12px 14px;
+        border-left: 3px solid var(--accent);
+        background: #e7f0f2;
+        color: var(--ink);
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Sample news feed</h1>
+      <p class="lede">
+        Load SwiftBlock, then refresh this page. Taylor Swift / Eras Tour / Anti-Hero cards should
+        hide; park, tech, and sports stay.
+      </p>
+
+      <div class="feed" role="feed">
+        <article>
+          <h2>City opens riverside park expansion</h2>
+          <p>New trails and a playground opened this weekend after two years of construction.</p>
+          <span class="tag">should stay</span>
+        </article>
+
+        <article>
+          <h2>Taylor Swift announces surprise Eras Tour documentary clip</h2>
+          <p>Fans are sharing stills from the new behind-the-scenes footage overnight.</p>
+          <span class="tag">should hide</span>
+        </article>
+
+        <article>
+          <h2>Chip shortage eases for mid-range laptops</h2>
+          <p>Retailers report more stock of popular 14-inch models ahead of the school year.</p>
+          <span class="tag">should stay</span>
+        </article>
+
+        <ul class="feed" aria-label="Headlines list">
+          <li>
+            <h2>T-Swift chart watch: Anti-Hero still spinning</h2>
+            <p>Radio programmers keep the Midnights single in heavy rotation this week.</p>
+            <span class="tag">should hide</span>
+          </li>
+          <li>
+            <h2>Local team clinches playoff berth</h2>
+            <p>A late goal sealed the win and sent the home crowd into celebration.</p>
+            <span class="tag">should stay</span>
+          </li>
+        </ul>
+
+        <article>
+          <h2>Blank Space playlist debate heats up online</h2>
+          <p>Commenters argue whether the 1989 deep cuts belong on every road-trip mix.</p>
+          <span class="tag">should hide</span>
+        </article>
+
+        <article>
+          <h2>Farmers market returns with record vendors</h2>
+          <p>Organizers expect a busy Saturday with produce, bread, and live music.</p>
+          <span class="tag">should stay</span>
+        </article>
+      </div>
+
+      <p class="hint">
+        Tip: open this file via <code>file://</code> or any local static server after
+        <strong>Load unpacked</strong> points at the folder that contains
+        <code>manifest.json</code>.
+      </p>
+    </main>
+  </body>
+</html>
