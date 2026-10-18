@@ -1,0 +1,23 @@
+# secrets / env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+client_secret*.json
+**/secrets/
+**/secret/
+
+# chrome debug / local tooling
+.chrome-debug-profile/
+.chrome-debug-pid.txt
+*.log
+
+# dependencies / build junk
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
