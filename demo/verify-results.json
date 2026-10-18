@@ -1,0 +1,20 @@
+{
+  "news": {
+    "href": "https://news.google.com/search?q=taylor%20swift&hl=en-US&gl=US&ceid=US:en",
+    "style": false,
+    "hidden": 0,
+    "cardCount": 10,
+    "taylorTotal": 10,
+    "taylorHidden": 0,
+    "glittering": [],
+    "bodyHasGlittering": false
+  },
+  "web": {
+    "href": "https://www.google.com/search?q=taylor+swift&hl=en&gl=us&pws=0",
+    "style": false,
+    "hidden": 0,
+    "gCount": 0,
+    "sample": []
+  },
+  "ext_id": null
+}

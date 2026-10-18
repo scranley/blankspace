@@ -1,0 +1,268 @@
+{
+  "href": "https://news.google.com/search?q=taylor%20swift&hl=en-US&gl=US&ceid=US:en",
+  "title": "Google News - Search",
+  "stylePresent": false,
+  "hiddenCount": 0,
+  "articleCount": 0,
+  "runtimeId": null,
+  "hasTaylorInBody": true,
+  "glitteringCount": 488,
+  "glittering": [
+    {
+      "tag": "HTML",
+      "id": "",
+      "cls": "",
+      "aria": "",
+      "text": "News Advanced search Help Settings Sign in Taylor Swift attends and performs at Academy Museum Gala People.com More Taylor Swift Dazzles in Romantic Dior Gown a",
+      "hiddenAttr": null,
+      "display": "block",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "HTML"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "BODY",
+      "id": "yDmH0d",
+      "cls": "tQj5Y ghyPEc IqBfM ecJEib EWZcud lF2Cpe k1PYFe eCItwe cteFme hZmmCc EIlDfe cjGgH",
+      "aria": "",
+      "text": "News Advanced search Help Settings Sign in Taylor Swift attends and performs at Academy Museum Gala People.com More Taylor Swift Dazzles in Romantic Dior Gown a",
+      "hiddenAttr": null,
+      "display": "block",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "BODY#yDmH0d.tQj5Y.ghyPEc",
+        "HTML"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "C-WIZ",
+      "id": "",
+      "cls": "zQTmif SSPGKf",
+      "aria": "",
+      "text": "Taylor Swift attends and performs at Academy Museum Gala People.com More Taylor Swift Dazzles in Romantic Dior Gown and Jaw-Dropping Diamonds at 2026 Academy Mu",
+      "hiddenAttr": null,
+      "display": "block",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "C-WIZ.zQTmif.SSPGKf",
+        "BODY#yDmH0d.tQj5Y.ghyPEc",
+        "HTML"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "T4LgNb",
+      "aria": "",
+      "text": "Taylor Swift attends and performs at Academy Museum Gala People.com More Taylor Swift Dazzles in Romantic Dior Gown and Jaw-Dropping Diamonds at 2026 Academy Mu",
+      "hiddenAttr": null,
+      "display": "block",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "DIV.T4LgNb",
+        "C-WIZ.zQTmif.SSPGKf",
+        "BODY#yDmH0d.tQj5Y.ghyPEc",
+        "HTML"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "MAIN",
+      "id": "",
+      "cls": "IKXQhd",
+      "aria": "",
+      "text": "Taylor Swift attends and performs at Academy Museum Gala People.com More Taylor Swift Dazzles in Romantic Dior Gown and Jaw-Dropping Diamonds at 2026 Academy Mu",
+      "hiddenAttr": null,
+      "display": "grid",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "MAIN.IKXQhd",
+        "DIV.T4LgNb",
+        "C-WIZ.zQTmif.SSPGKf",
+        "BODY#yDmH0d.tQj5Y.ghyPEc",
+        "HTML"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "UW0SDc",
+      "aria": "",
+      "text": "Taylor Swift attends and performs at Academy Museum Gala People.com More Taylor Swift Dazzles in Romantic Dior Gown and Jaw-Dropping Diamonds at 2026 Academy Mu",
+      "hiddenAttr": null,
+      "display": "block",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "DIV.UW0SDc",
+        "MAIN.IKXQhd",
+        "DIV.T4LgNb",
+        "C-WIZ.zQTmif.SSPGKf",
+        "BODY#yDmH0d.tQj5Y.ghyPEc",
+        "HTML"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "C-WIZ",
+      "id": "",
+      "cls": "D9SJMe",
+      "aria": "",
+      "text": "Taylor Swift attends and performs at Academy Museum Gala People.com More Taylor Swift Dazzles in Romantic Dior Gown and Jaw-Dropping Diamonds at 2026 Academy Mu",
+      "hiddenAttr": null,
+      "display": "inline",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "C-WIZ.D9SJMe",
+        "DIV.UW0SDc",
+        "MAIN.IKXQhd",
+        "DIV.T4LgNb",
+        "C-WIZ.zQTmif.SSPGKf",
+        "BODY#yDmH0d.tQj5Y.ghyPEc",
+        "HTML"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "C-WIZ",
+      "id": "",
+      "cls": "PO9Zff kUVvS",
+      "aria": "",
+      "text": "Taylor Swift attends and performs at Academy Museum Gala People.com More Taylor Swift Dazzles in Romantic Dior Gown and Jaw-Dropping Diamonds at 2026 Academy Mu",
+      "hiddenAttr": null,
+      "display": "block",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "C-WIZ.PO9Zff.kUVvS",
+        "C-WIZ.D9SJMe",
+        "DIV.UW0SDc",
+        "MAIN.IKXQhd",
+        "DIV.T4LgNb",
+        "C-WIZ.zQTmif.SSPGKf",
+        "BODY#yDmH0d.tQj5Y.ghyPEc",
+        "HTML"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "C-WIZ",
+      "id": "",
+      "cls": "ME1Kbf",
+      "aria": "",
+      "text": "Taylor Swift attends and performs at Academy Museum Gala People.com More Taylor Swift Dazzles in Romantic Dior Gown and Jaw-Dropping Diamonds at 2026 Academy Mu",
+      "hiddenAttr": null,
+      "display": "block",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "C-WIZ.ME1Kbf",
+        "C-WIZ.PO9Zff.kUVvS",
+        "C-WIZ.D9SJMe",
+        "DIV.UW0SDc",
+        "MAIN.IKXQhd",
+        "DIV.T4LgNb",
+        "C-WIZ.zQTmif.SSPGKf",
+        "BODY#yDmH0d.tQj5Y.ghyPEc",
+        "HTML"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "cls": "lgHhnc",
+      "aria": "",
+      "text": "Taylor Swift attends and performs at Academy Museum Gala",
+      "hiddenAttr": null,
+      "display": "flex",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "A.lgHhnc",
+        "C-WIZ.ME1Kbf",
+        "C-WIZ.PO9Zff.kUVvS",
+        "C-WIZ.D9SJMe",
+        "DIV.UW0SDc",
+        "MAIN.IKXQhd",
+        "DIV.T4LgNb",
+        "C-WIZ.zQTmif.SSPGKf",
+        "BODY#yDmH0d.tQj5Y.ghyPEc",
+        "HTML"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "H3",
+      "id": "",
+      "cls": "hgyOfc",
+      "aria": "",
+      "text": "Taylor Swift attends and performs at Academy Museum Gala",
+      "hiddenAttr": null,
+      "display": "block",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "H3.hgyOfc",
+        "A.lgHhnc",
+        "C-WIZ.ME1Kbf",
+        "C-WIZ.PO9Zff.kUVvS",
+        "C-WIZ.D9SJMe",
+        "DIV.UW0SDc",
+        "MAIN.IKXQhd",
+        "DIV.T4LgNb",
+        "C-WIZ.zQTmif.SSPGKf",
+        "BODY#yDmH0d.tQj5Y.ghyPEc"
+      ],
+      "shadowHost": false
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "R5wh1e",
+      "aria": "",
+      "text": "People.com More Taylor Swift Dazzles in Romantic Dior Gown and Jaw-Dropping Diamonds at 2026 Academy Museum Gala 4 hours ago By Escher Walcott & Skyler Caruso T",
+      "hiddenAttr": null,
+      "display": "grid",
+      "inArticle": false,
+      "articleHidden": null,
+      "articleDisplay": null,
+      "parentChain": [
+        "DIV.R5wh1e",
+        "C-WIZ.ME1Kbf",
+        "C-WIZ.PO9Zff.kUVvS",
+        "C-WIZ.D9SJMe",
+        "DIV.UW0SDc",
+        "MAIN.IKXQhd",
+        "DIV.T4LgNb",
+        "C-WIZ.zQTmif.SSPGKf",
+        "BODY#yDmH0d.tQj5Y.ghyPEc",
+        "HTML"
+      ],
+      "shadowHost": false
+    }
+  ],
+  "sampleArticles": []
+}

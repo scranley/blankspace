@@ -1,0 +1,23 @@
+{
+  "name": "blankspace",
+  "version": "1.0.0",
+  "description": "A Manifest V3 Chrome extension that hides Taylor Swift–related mentions from web pages using keyword filtering.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scranley/blankspace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scranley/blankspace/issues"
+  },
+  "homepage": "https://github.com/scranley/blankspace#readme",
+  "dependencies": {
+    "jsdom": "^24.1.3"
+  }
+}

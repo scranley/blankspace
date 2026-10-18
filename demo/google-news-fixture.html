@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Google News fixture — SwiftBlock</title>
+    <style>
+      body {
+        font: 14px/1.4 system-ui, sans-serif;
+        margin: 24px;
+        background: #f6f7f8;
+      }
+      c-wiz {
+        display: block;
+      }
+      article {
+        background: #fff;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        padding: 12px 14px;
+        margin: 10px 0;
+        max-width: 640px;
+      }
+      article a {
+        color: #1a0dab;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .meta {
+        color: #70757a;
+        font-size: 12px;
+        margin-top: 6px;
+      }
+      #log {
+        margin-top: 16px;
+        font-family: Consolas, monospace;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>News fixture</h1>
+    <p>Search box (must stay visible): <input id="q" type="search" value="taylor swift" /></p>
+
+    <c-wiz>
+      <div id="early">
+        <article id="keep-park">
+          <a href="#">City expands riverside park trails this weekend</a>
+          <div class="meta">Local News — 1 hour ago</div>
+        </article>
+      </div>
+    </c-wiz>
+
+    <script type="module">
+      // Mimic Google News: c-wiz injects an article later; headline mainly on aria-label.
+      setTimeout(() => {
+        const wiz = document.querySelector("c-wiz");
+        const art = document.createElement("article");
+        art.id = "instyle-ts";
+        const link = document.createElement("a");
+        link.href = "https://example.com/instyle-gown";
+        link.setAttribute(
+          "aria-label",
+          "Taylor Swift Slips Into a Glittering Sheer Navy Tulle Gown for a Milestone Performance at the Academy Museum Gala"
+        );
+        // Sparse visible text (image-first card style)
+        link.textContent = "";
+        const img = document.createElement("img");
+        img.alt = "";
+        img.width = 120;
+        img.height = 80;
+        img.src =
+          "data:image/svg+xml," +
+          encodeURIComponent(
+            '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="80"><rect fill="#ddd" width="120" height="80"/></svg>'
+          );
+        link.appendChild(img);
+        art.appendChild(link);
+        const meta = document.createElement("div");
+        meta.className = "meta";
+        meta.textContent = "InStyle — 4 hours ago, By Meg Walters";
+        art.appendChild(meta);
+        wiz.appendChild(art);
+
+        // Second card: visible text headline
+        const art2 = document.createElement("article");
+        art2.id = "visible-ts";
+        art2.innerHTML =
+          '<a href="#">Taylor Swift fans line up for Eras Tour tribute night</a><div class="meta">Music Wire — 2 hours ago</div>';
+        wiz.appendChild(art2);
+      }, 400);
+
+      // Standalone checker (no chrome.storage) for CDP verification
+      window.__swiftblockFixtureReady = true;
+    </script>
+  </body>
+</html>

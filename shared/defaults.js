@@ -1,53 +1,63 @@
 /**
- * Default keywords/aliases that strongly signal Taylor Swift content.
- * Prefer distinctive phrases; users can add/remove from the popup.
- * Short/ambiguous words (e.g. "Red", "Karma") are omitted by default.
+ * Shared defaults for SwiftBlock (classic script — no export/import).
+ * Loaded before content/filter.js, popup.js, and via importScripts in background.
  */
-export const DEFAULT_KEYWORDS = [
-  "Taylor Swift",
-  "Tay Swift",
-  "TaySwift",
-  "T-Swift",
-  "T Swift",
-  "Swiftie",
-  "Swifties",
-  "Eras Tour",
-  "The Eras Tour",
-  "Miss Americana",
-  "Reputation Stadium Tour",
-  "Taylor's Version",
-  "The Tortured Poets Department",
-  "TTPD",
-  "The Life of a Showgirl",
-  "Fearless (Taylor's Version)",
-  "Speak Now (Taylor's Version)",
-  "Red (Taylor's Version)",
-  "1989 (Taylor's Version)",
-  "Midnights",
-  "Folklore",
-  "Evermore",
-  "Anti-Hero",
-  "Shake It Off",
-  "Blank Space",
-  "Cruel Summer",
-  "All Too Well",
-  "Look What You Made Me Do",
-  "You Belong With Me",
-  "Bad Blood",
-  "Lavender Haze",
-  "Bejeweled",
-  "Fortnight",
-  "Cardigan",
-  "Willow",
-  "Delicate"
-];
+(function (global) {
+  "use strict";
 
-export const STORAGE_KEYS = {
-  enabled: "enabled",
-  keywords: "keywords"
-};
+  /** @type {string[]} */
+  const DEFAULT_KEYWORDS = [
+    "Taylor Swift",
+    "Tay Swift",
+    "TaySwift",
+    "T-Swift",
+    "T Swift",
+    "Swiftie",
+    "Swifties",
+    "Eras Tour",
+    "The Eras Tour",
+    "Miss Americana",
+    "Reputation Stadium Tour",
+    "Taylor's Version",
+    "The Tortured Poets Department",
+    "TTPD",
+    "The Life of a Showgirl",
+    "Fearless (Taylor's Version)",
+    "Speak Now (Taylor's Version)",
+    "Red (Taylor's Version)",
+    "1989 (Taylor's Version)",
+    "Midnights",
+    "Folklore",
+    "Evermore",
+    "Anti-Hero",
+    "Shake It Off",
+    "Blank Space",
+    "Cruel Summer",
+    "All Too Well",
+    "Look What You Made Me Do",
+    "You Belong With Me",
+    "Bad Blood",
+    "Lavender Haze",
+    "Bejeweled",
+    "Fortnight",
+    "Cardigan",
+    "Willow",
+    "Delicate"
+  ];
 
-export const DEFAULT_SETTINGS = {
-  enabled: true,
-  keywords: DEFAULT_KEYWORDS
-};
+  const STORAGE_KEYS = {
+    enabled: "enabled",
+    keywords: "keywords"
+  };
+
+  const DEFAULT_SETTINGS = {
+    enabled: true,
+    keywords: DEFAULT_KEYWORDS
+  };
+
+  global.SWIFTBLOCK_DEFAULTS = {
+    DEFAULT_KEYWORDS,
+    STORAGE_KEYS,
+    DEFAULT_SETTINGS
+  };
+})(typeof globalThis !== "undefined" ? globalThis : self);

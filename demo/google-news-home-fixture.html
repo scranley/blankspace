@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Google News Home fixture — SwiftBlock</title>
+    <style>
+      body { font: 14px/1.4 system-ui, sans-serif; margin: 16px; background: #f6f7f8; }
+      main { display: grid; grid-template-columns: 1fr 280px; gap: 16px; max-width: 960px; }
+      c-wiz { display: block; }
+      .feed { background: #fff; border: 1px solid #dadce0; padding: 8px; }
+      .card { border-bottom: 1px solid #eee; padding: 10px 8px; }
+      .card a { color: #1a0dab; font-weight: 600; text-decoration: none; }
+      .meta { color: #70757a; font-size: 12px; margin-top: 4px; }
+      #log { margin-top: 16px; font-family: Consolas, monospace; white-space: pre-wrap; }
+      [data-swiftblock-hidden="1"] { outline: 2px solid #b42318; opacity: 0.25; }
+    </style>
+  </head>
+  <body>
+    <h1>News Home fixture</h1>
+    <p>Section wrapper holds many stories. Safe filter must hide only single cards, never blank the feed.</p>
+    <main>
+      <!-- Home-like section: one c-wiz wrapping MANY story cards (must NOT be hidden as a unit) -->
+      <c-wiz class="feed section-shell" id="home-section">
+        <div class="card story" id="story-park">
+          <a href="./read/park123">City expands riverside park trails</a>
+          <div class="meta">Local — 1h</div>
+        </div>
+        <div class="card story" id="story-ts">
+          <a href="./read/ts456">Taylor Swift performs at Academy Museum Gala</a>
+          <div class="meta">People.com — 2h</div>
+        </div>
+        <c-wiz class="PO9Zff" id="story-ts-card">
+          <a class="JtKRv" href="./read/ts789" aria-label="Taylor Swift Slips Into a Glittering Sheer Navy Tulle Gown">
+            Taylor Swift Slips Into a Glittering Sheer Navy Tulle Gown
+          </a>
+          <div class="meta">InStyle — 4h</div>
+        </c-wiz>
+        <div class="card story" id="story-sports">
+          <a href="./read/sports001">Local team clinches playoff berth</a>
+          <div class="meta">Sports — 3h</div>
+        </div>
+      </c-wiz>
+      <aside>
+        <div class="card" id="topic-card">
+          <strong>Taylor Swift — Topic</strong>
+          <div class="meta">Follow</div>
+        </div>
+      </aside>
+    </main>
+    <pre id="log">Open DevTools and load the extension, or inject defaults.js + filter.js with a chrome.storage stub.</pre>
+    <script>
+      // Layout rects so zero-area fail-closed can be reasoned about in manual tests.
+      document.querySelectorAll(".card, c-wiz.PO9Zff, .section-shell, main, body").forEach((el) => {
+        el.getBoundingClientRect();
+      });
+    </script>
+  </body>
+</html>

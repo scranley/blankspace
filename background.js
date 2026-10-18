@@ -1,4 +1,7 @@
-import { DEFAULT_SETTINGS, STORAGE_KEYS } from "./shared/defaults.js";
+/* global SWIFTBLOCK_DEFAULTS, importScripts */
+importScripts("shared/defaults.js");
+
+const { DEFAULT_SETTINGS, STORAGE_KEYS } = self.SWIFTBLOCK_DEFAULTS;
 
 chrome.runtime.onInstalled.addListener(async () => {
   const existing = await chrome.storage.sync.get([

@@ -1,4 +1,5 @@
-import { DEFAULT_KEYWORDS, STORAGE_KEYS } from "../shared/defaults.js";
+/* global SWIFTBLOCK_DEFAULTS */
+const { DEFAULT_KEYWORDS, STORAGE_KEYS } = globalThis.SWIFTBLOCK_DEFAULTS;
 
 const enabledInput = document.getElementById("enabled");
 const enabledLabel = document.getElementById("enabled-label");

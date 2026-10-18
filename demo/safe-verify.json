@@ -1,0 +1,92 @@
+{
+  "news": {
+    "before": {
+      "href": "https://news.google.com/search?q=taylor%20swift&hl=en-US&gl=US&ceid=US:en",
+      "style": true,
+      "hiddenAttr": 97,
+      "cardsTotal": 100,
+      "visibleCards": 3,
+      "visibleWithTaylor": 0,
+      "visibleWithoutTaylor": 3,
+      "glitteringVisible": false,
+      "searchVisible": true,
+      "bodyKids": 30,
+      "mainTextLen": 909,
+      "sampleNonTaylor": [
+        "Business Insider More Only 33 albums in history have yielded 3 or more No. 1 son",
+        "People.com More See All the Stars at the 2026 Academy Museum Gala: Red Carpet Ph",
+        "LAmag More Sixth Annual Academy Museum Gala Raises a Record $14 Million 1 hour a"
+      ],
+      "sampleTaylor": []
+    },
+    "after": {
+      "href": "https://news.google.com/search?q=taylor%20swift&hl=en-US&gl=US&ceid=US:en",
+      "style": true,
+      "hiddenAttr": 97,
+      "cardsTotal": 100,
+      "visibleCards": 3,
+      "visibleWithTaylor": 0,
+      "visibleWithoutTaylor": 3,
+      "glitteringVisible": false,
+      "searchVisible": true,
+      "bodyKids": 30,
+      "mainTextLen": 909,
+      "sampleNonTaylor": [
+        "Business Insider More Only 33 albums in history have yielded 3 or more No. 1 son",
+        "People.com More See All the Stars at the 2026 Academy Museum Gala: Red Carpet Ph",
+        "LAmag More Sixth Annual Academy Museum Gala Raises a Record $14 Million 1 hour a"
+      ],
+      "sampleTaylor": []
+    },
+    "blocked": false
+  },
+  "web": {
+    "before": {
+      "href": "https://news.google.com/search?q=taylor%20swift&hl=en-US&gl=US&ceid=US:en",
+      "style": true,
+      "hiddenAttr": 97,
+      "cardsTotal": 100,
+      "visibleCards": 3,
+      "visibleWithTaylor": 0,
+      "visibleWithoutTaylor": 3,
+      "glitteringVisible": false,
+      "searchVisible": true,
+      "bodyKids": 30,
+      "mainTextLen": 909,
+      "sampleNonTaylor": [
+        "Business Insider More Only 33 albums in history have yielded 3 or more No. 1 son",
+        "People.com More See All the Stars at the 2026 Academy Museum Gala: Red Carpet Ph",
+        "LAmag More Sixth Annual Academy Museum Gala Raises a Record $14 Million 1 hour a"
+      ],
+      "sampleTaylor": []
+    },
+    "after": {
+      "href": "https://news.google.com/search?q=taylor%20swift&hl=en-US&gl=US&ceid=US:en",
+      "style": true,
+      "hiddenAttr": 97,
+      "cardsTotal": 100,
+      "visibleCards": 3,
+      "visibleWithTaylor": 0,
+      "visibleWithoutTaylor": 3,
+      "glitteringVisible": false,
+      "searchVisible": true,
+      "bodyKids": 30,
+      "mainTextLen": 909,
+      "sampleNonTaylor": [
+        "Business Insider More Only 33 albums in history have yielded 3 or more No. 1 son",
+        "People.com More See All the Stars at the 2026 Academy Museum Gala: Red Carpet Ph",
+        "LAmag More Sixth Annual Academy Museum Gala Raises a Record $14 Million 1 hour a"
+      ],
+      "sampleTaylor": []
+    },
+    "blocked": false
+  },
+  "autocomplete": {
+    "ok": true,
+    "style": true,
+    "bodyLen": 481,
+    "inputStill": true,
+    "hiddenBig": 0,
+    "listboxHidden": false
+  }
+}
